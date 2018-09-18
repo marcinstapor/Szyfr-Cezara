@@ -53,12 +53,15 @@ public class Main {
         System.out.println("1. Konwersja");
         System.out.println("2. Dekonwersja");
         int ktore = Dane.nextInt();
-
-        if(ktore == 1)
-            System.out.println(konwersja(haslo));
-        else if(ktore == 2)
-            System.out.println(dekonwersja(haslo));
-        else
-            System.out.println("Nieobsługiwany rodzaj. Proszę spróbować ponownie");
+        
+switch(ktore) {
+          case 1:
+               System.out.println(konwersja(haslo));
+               break;
+          case 2:
+               System.out.println(dekonwersja(haslo));
+               break;
+          default:
+               System.out.println("Nieobsługiwany rodzaj. Proszę spróbować ponownie");
     }
 }
