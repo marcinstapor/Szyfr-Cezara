@@ -48,6 +48,7 @@ public class Main {
 
         System.out.print("Proszę wprowadzić hasło do konwersji: ");
         String haslo = Dane.nextLine();
+        haslo = haslo.toLowerCase();
 
         System.out.println("Co mam zrobić?");
         System.out.println("1. Konwersja");
